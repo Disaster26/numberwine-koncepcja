@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Prosecco z kija i wino z KEGa dla lokali i na imprezy | NumberWine</title>
+<meta name="description" content="Frizzante (prosecco z kija), aperitivo i wina w KEGach 24 l oraz sprzęt do nalewania: wynajem, sprzedaż i serwis. Dla restauracji, pubów, na wesela i imprezy firmowe. Warszawa i Mazowsze.">
+<meta name="theme-color" content="#231F20">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/jost-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/rodzina-960.webp" media="(max-width:767px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/wesele-960.webp" imagesrcset="img/wesele-640.webp 640w, img/wesele-960.webp 960w, img/wesele-1440.webp 1440w, img/wesele-1920.webp 1920w" imagesizes="(min-width:768px) 150vh, 150vh" media="(min-width:768px)">
+<style>
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--graf:#231F20;--graf2:#2E2A2B;--lim:#B5D660;--lim-d:#5E7A14;--szar:#EFF1EE;--tekst:#3A3637;--sz:1240px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Jost,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:18px;line-height:1.6;color:var(--tekst);background:#fff;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-weight:600;line-height:1.12;color:var(--graf);margin:0}
+h2{font-size:clamp(30px,3.6vw,48px);letter-spacing:-.01em}
+h3{font-size:22px}
+p{margin:0 0 1em}
+.sz{max-width:var(--sz);margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;gap:12px;min-height:54px;padding:0 26px;font:600 17px/1 Jost,sans-serif;text-decoration:none;border:2px solid transparent;border-radius:3px;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn-lim{background:var(--lim);color:var(--graf)}
+.btn-lim:hover{background:#c6e37a}
+.btn-lim::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--graf)}
+.btn-jasny{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-jasny:hover{background:#fff;color:var(--graf)}
+.btn-graf{background:var(--graf);color:#fff}
+.btn-graf:hover{background:#000}
+/* kiść - znak z logo */
+.kisc{display:inline-grid;grid-template-columns:repeat(3,10px);gap:3px;width:max-content}
+.kisc i{width:10px;height:10px;border-radius:50%;background:var(--lim)}
+.kisc i:nth-child(4){grid-column:1/2;margin-left:6.5px}.kisc i:nth-child(5){margin-left:6.5px}
+.kisc i:nth-child(6){grid-column:2/3}
+/* nagłówek */
+.top{position:fixed;inset:0 0 auto;z-index:50;transition:background .25s,box-shadow .25s}
+.top .sz{display:flex;align-items:center;justify-content:space-between;height:84px;max-width:1440px}
+.top.pas{background:var(--graf);box-shadow:0 1px 0 rgba(255,255,255,.06)}
+.top.pas .sz{height:68px}
+.logo img{width:104px;height:auto;transition:width .25s}
+.top.pas .logo img{width:84px}
+.menu{display:flex;gap:30px;align-items:center}
+.menu a{color:#fff;text-decoration:none;font-size:16px;font-weight:500;opacity:.92}
+.menu a:hover{opacity:1;color:var(--lim)}
+.menu .tel{display:inline-flex;align-items:center;gap:8px;border:1.5px solid rgba(255,255,255,.55);padding:9px 16px;border-radius:3px;font-weight:600;opacity:1}
+.menu .tel:hover{border-color:var(--lim)}
+.burger{display:none}
+/* pierwszy ekran: trzy kolumny jak kolumna trzykranowa */
+.hero{padding:0;position:relative;height:min(100svh,1300px);min-height:620px;background:var(--graf);color:#fff;overflow:hidden}
+.kol{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px}
+.kol figure{margin:0;position:relative;overflow:hidden;background:var(--graf2)}
+.kol img{width:100%;height:100%;object-fit:cover}
+.kol figure:nth-child(1) img{object-position:62% 50%}
+.kol figure:nth-child(2) img{object-position:50% 40%}
+.kol figure:nth-child(3) img{object-position:30% 50%}
+.kol figcaption{position:absolute;left:28px;bottom:26px;font-size:15px;font-weight:500;display:flex;align-items:center;gap:10px;z-index:2;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.kol figcaption::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--lim)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(35,31,32,.55) 0,rgba(35,31,32,0) 22%,rgba(35,31,32,0) 38%,rgba(35,31,32,.78) 74%,rgba(35,31,32,.92) 100%)}
+.hero-tekst{position:absolute;left:0;right:0;bottom:84px;z-index:3}
+.hero-tekst .sz{max-width:1440px}
+.hero h1{color:#fff;font-size:clamp(40px,4.4vw,70px);max-width:900px}
+.hero .lead{font-size:clamp(18px,1.45vw,21px);max-width:640px;margin:22px 0 32px;color:rgba(255,255,255,.9)}
+.hero .akcje{display:flex;flex-wrap:wrap;gap:14px}
+/* sekcje */
+section{padding:clamp(72px,9vw,128px) 0}
+.szara{background:var(--szar)}
+.ciemna{background:var(--graf);color:rgba(255,255,255,.82)}
+.ciemna h2,.ciemna h3{color:#fff}
+.naglowek{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:48px;flex-wrap:wrap}
+.naglowek p{max-width:520px;margin:0}
+/* dla kogo */
+.dwa{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.blok{display:flex;flex-direction:column;gap:26px;padding:32px;background:var(--szar);border-radius:4px}
+.blok img{border-radius:3px;width:100%;max-width:608px;aspect-ratio:16/9;object-fit:cover}
+.blok>div{display:flex;flex-direction:column;flex:1}
+.blok .btn{align-self:flex-start;margin-top:auto}
+.blok h3{margin-bottom:14px}
+.blok .btn{margin-top:8px}
+.kropki{list-style:none;padding:0;margin:0 0 18px}
+.kropki li{position:relative;padding-left:24px;margin-bottom:8px}
+.kropki li::before{content:"";position:absolute;left:2px;top:.62em;width:9px;height:9px;border-radius:50%;background:var(--lim)}
+/* produkty */
+.pasek{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 24px 26px;margin:0 -24px;scrollbar-width:thin;scrollbar-color:var(--lim) transparent;cursor:grab;-webkit-overflow-scrolling:touch}
+.pasek.ciag{cursor:grabbing;scroll-snap-type:none}
+.pasek::-webkit-scrollbar{height:6px}.pasek::-webkit-scrollbar-thumb{background:var(--lim);border-radius:3px}
+.keg{flex:0 0 250px;scroll-snap-align:start;background:#fff;border-radius:4px;padding:26px 22px 24px;text-align:center;user-select:none}
+.keg img{width:180px;height:180px;margin:0 auto 18px;border-radius:50%;pointer-events:none}
+.keg h3{font-size:20px;margin-bottom:4px}
+.keg .typ{font-size:15px;color:#6b6768;margin:0 0 16px}
+.keg button{font:600 15px Jost,sans-serif;background:none;border:1.5px solid var(--graf);color:var(--graf);padding:10px 16px;border-radius:3px;cursor:pointer}
+.keg button:hover{background:var(--graf);color:#fff}
+.pelna{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:48px;padding-top:40px;border-top:1px solid #d7dad5}
+.pelna h3{font-size:19px;margin-bottom:12px}
+.pelna .kropki li{margin-bottom:4px}
+.uwaga{margin-top:28px;font-size:16px;color:#5d595a}
+/* dlaczego z kija */
+.dlaczego{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:64px;align-items:start}
+.dlaczego .wstep p{font-size:19px}
+.zalety{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:34px 40px}
+.zalety li{border-top:1px solid rgba(255,255,255,.16);padding-top:20px}
+.zalety h3{font-size:21px;margin-bottom:8px;display:flex;align-items:center;gap:12px}
+.zalety h3::before{content:"";width:11px;height:11px;border-radius:50%;background:var(--lim);flex:none}
+.zalety p{margin:0;font-size:17px}
+.cytat{margin-top:36px;font-size:20px;color:#fff;border-left:3px solid var(--lim);padding-left:20px}
+/* sprzęt */
+.trzy{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.sprzet{border:1px solid #e2e5e0;border-radius:4px;padding:30px 28px;display:flex;flex-direction:column}
+.sprzet img{width:84px;height:117px;margin-bottom:22px}
+.sprzet h3{margin-bottom:10px}
+.sprzet p{font-size:17px}
+.sprzet .btn{margin-top:auto;align-self:flex-start}
+.komplet{margin-top:36px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center}
+.komplet img{border-radius:4px}
+/* historia + opinie */
+.os{display:grid;grid-template-columns:repeat(4,1fr);position:relative;margin:8px 0 72px}
+.os::before{content:"";position:absolute;left:0;right:0;top:9px;height:2px;background:#cfd3cc}
+.os li{list-style:none;position:relative;padding:36px 20px 0 0}
+.os li::before{content:"";position:absolute;left:0;top:0;width:20px;height:20px;border-radius:50%;background:var(--lim);box-shadow:0 0 0 5px var(--szar)}
+.os b{display:block;font-size:30px;color:var(--graf);font-weight:600;line-height:1.1}
+.os span{font-size:17px}
+.os ol,.os{padding:0}
+.opinie{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.opinia{background:#fff;border-radius:4px;padding:30px 28px;margin:0}
+.opinia p{font-size:17px}
+.opinia footer{font-size:15px;color:#6b6768}
+.opinia footer b{color:var(--graf);font-weight:600;display:block;font-size:16px}
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:56px;align-items:start}
+.dane{font-size:18px}
+.dane a{text-decoration:none;font-weight:600;color:var(--graf)}
+.dane .duzy{font-size:30px;display:block;margin:6px 0 4px}
+.dane dl{margin:28px 0 0;display:grid;grid-template-columns:auto 1fr;gap:6px 18px}
+.dane dt{color:#6b6768}.dane dd{margin:0}
+.mapa{margin-top:28px;aspect-ratio:16/10;background:var(--szar);border-radius:4px;overflow:hidden}
+.mapa iframe{width:100%;height:100%;border:0}
+form{background:var(--szar);border-radius:4px;padding:34px}
+form h3{margin-bottom:22px}
+.pola{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:block;font-size:15px;font-weight:500;color:var(--graf)}
+input,select,textarea{width:100%;margin-top:6px;font:17px Jost,sans-serif;padding:13px 14px;border:1.5px solid #cdd1ca;border-radius:3px;background:#fff;color:var(--graf)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--graf)}
+textarea{min-height:120px;resize:vertical}
+.cale{grid-column:1/-1}
+.zgoda{display:flex;gap:10px;font-size:14px;font-weight:400;color:#5d595a;align-items:flex-start}
+.zgoda input{width:auto;margin-top:4px}
+form .btn{margin-top:20px;border:0}
+.info{display:none;margin-top:16px;font-size:16px;background:#fff;border-left:3px solid var(--lim);padding:12px 14px}
+/* stopka */
+.stopka{background:var(--graf);color:rgba(255,255,255,.72);padding:64px 0 34px;font-size:16px}
+.stopka .siatka{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:32px}
+.stopka h3{color:#fff;font-size:17px;margin-bottom:12px}
+.stopka a{text-decoration:none}.stopka a:hover{color:var(--lim)}
+.stopka ul{list-style:none;padding:0;margin:0}.stopka li{margin-bottom:6px}
+.stopka .dol{margin-top:48px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:14px}
+.wiek{font-size:14px;margin-top:14px;color:rgba(255,255,255,.55)}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+/* szerokie ekrany */
+@media (min-width:2200px){:root{--sz:1400px}body{font-size:19px}}
+/* tablet i telefon */
+@media (max-width:1100px){
+ .menu a:not(.tel){display:none}
+ .burger{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;margin-left:10px;background:none;border:1.5px solid rgba(255,255,255,.55);border-radius:3px;cursor:pointer}
+ .burger span{display:block;width:20px;height:2px;background:#fff;box-shadow:0 -6px 0 #fff,0 6px 0 #fff}
+ .menu.otwarte{position:fixed;inset:68px 0 auto;background:var(--graf);flex-direction:column;align-items:stretch;gap:0;padding:8px 24px 24px}
+ .menu.otwarte a:not(.tel){display:block;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:19px}
+ .menu.otwarte .tel{margin-top:16px;justify-content:center}
+ .dwa,.dlaczego,.kontakt{grid-template-columns:1fr}
+ .dlaczego{gap:40px}
+ .trzy,.opinie{grid-template-columns:1fr 1fr}
+ .stopka .siatka{grid-template-columns:1fr 1fr}
+}
+@media (max-width:767px){
+ body{font-size:17px}
+ .sz{padding:0 20px}
+ .top .sz{height:68px}
+ .logo img{width:84px}
+ .menu .tel{padding:0;width:46px;height:46px;justify-content:center}
+ .menu .tel span{display:none}
+ .hero{height:auto;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end}
+ .kol{grid-template-columns:1fr}
+ .kol figure:nth-child(2),.kol figure:nth-child(3),.kol figcaption{display:none}
+ .kol figure:nth-child(1) img{object-position:58% 50%}
+ .hero::after{background:linear-gradient(180deg,rgba(35,31,32,.6) 0,rgba(35,31,32,0) 16%,rgba(35,31,32,.25) 30%,rgba(35,31,32,.88) 52%,rgba(35,31,32,.95) 100%)}
+ .hero-tekst{position:relative;bottom:auto;padding:120px 0 28px}
+ .hero h1{font-size:clamp(31px,8.6vw,40px)}
+ .hero .lead{font-size:17px;margin:14px 0 24px;line-height:1.5}
+ .hero .akcje{gap:10px}
+ .hero .btn{flex:1 1 auto;justify-content:center;min-height:50px;padding:0 18px}
+ .blok{padding:24px 20px;gap:20px}
+ .pasek{padding:6px 20px 22px;margin:0 -20px}
+ .keg{flex-basis:220px}
+ .keg img{width:156px;height:156px}
+ .pelna{grid-template-columns:1fr;gap:26px}
+ .zalety{grid-template-columns:1fr;gap:24px}
+ .trzy,.opinie{grid-template-columns:1fr}
+ .komplet{grid-template-columns:1fr;gap:22px}
+ .os{grid-template-columns:1fr 1fr;row-gap:30px}
+ .os::before{display:none}
+ .os li::before{box-shadow:none}
+ .pola{grid-template-columns:1fr}
+ form{padding:24px 20px}
+ .dane .duzy{font-size:26px}
+ .stopka .siatka{grid-template-columns:1fr 1fr;gap:26px 18px}
+ .stopka .siatka>div:first-child{grid-column:1/-1}
+}
+@media (max-width:767px){.menu.otwarte .tel{width:auto;height:auto;padding:14px 16px}.menu.otwarte .tel span{display:inline}}
+@media (max-width:767px) and (max-height:700px){.hero-tekst{padding-top:96px}.hero h1{font-size:30px}.hero .lead{font-size:16px;margin:10px 0 24px}}
+</style>
+</head>
+<body>
+<header class="top" id="top">
+ <div class="sz">
+  <a class="logo" href="#" aria-label="NumberWine - strona główna"><img src="img/logo-jasne-405.webp" width="405" height="275" alt="NumberWine"></a>
+  <nav class="menu" id="menu" aria-label="Menu">
+   <a href="#dla-kogo">Dla kogo</a>
+   <a href="#oferta">Oferta win w KEGach</a>
+   <a href="#dlaczego">Wino z kranu</a>
+   <a href="#sprzet">Sprzęt i wynajem</a>
+   <a href="#o-nas">O nas</a>
+   <a href="#kontakt">Kontakt</a>
+   <a class="tel" href="tel:+48535353054" aria-label="Zadzwoń: 53 53 53 054"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4.6 1.8 6.4 5 5 6.4c.8 1.8 2.2 3.2 4 4l1.4-1.4 3.2 1.8-.6 2.6c-.2.6-.7 1-1.3.9C6.5 13.8 2.2 9.5 1.7 3.3c0-.6.3-1.1.9-1.3z"/></svg><span>53 53 53 054</span></a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+ </div>
+</header>
+
+<main>
+<section class="hero" aria-label="NumberWine">
+ <div class="kol">
+  <figure>
+   <picture>
+    <source media="(max-width:767px)" srcset="img/rodzina-640.webp 640w, img/rodzina-960.webp 960w, img/rodzina-1440.webp 1440w, img/rodzina-1920.webp 1920w" sizes="150vh">
+    <img src="img/wesele-960.webp" srcset="img/wesele-640.webp 640w, img/wesele-960.webp 960w, img/wesele-1440.webp 1440w, img/wesele-1920.webp 1920w" sizes="(min-width:768px) 150vh, 150vh" width="1920" height="1280" alt="Toast lampkami frizzante na weselu" fetchpriority="high">
+   </picture>
+   <figcaption>Wesela</figcaption>
+  </figure>
+  <figure>
+   <img src="img/firma-960.webp" srcset="img/firma-640.webp 640w, img/firma-960.webp 960w, img/firma-1440.webp 1440w, img/firma-1920.webp 1920w" sizes="(min-width:768px) 150vh, 150vh" width="1920" height="1282" alt="Impreza firmowa z winem z KEGa">
+   <figcaption>Imprezy firmowe</figcaption>
+  </figure>
+  <figure>
+   <img src="img/rodzina-960.webp" srcset="img/rodzina-640.webp 640w, img/rodzina-960.webp 960w, img/rodzina-1440.webp 1440w, img/rodzina-1920.webp 1920w" sizes="(min-width:768px) 150vh, 150vh" width="1920" height="1281" alt="Przyjęcie w ogrodzie z prosecco z kija">
+   <figcaption>Przyjęcia rodzinne</figcaption>
+  </figure>
+ </div>
+ <div class="hero-tekst">
+  <div class="sz">
+   <h1>Prosecco z kija i wino z KEGa dla lokali i na imprezy</h1>
+   <p class="lead">Frizzante nalewane z kranu jak piwo: zawsze schłodzone i świeże do ostatniego kieliszka, bez otwartych butelek. Dostarczamy KEGi i sprzęt, instalujemy i serwisujemy.</p>
+   <div class="akcje">
+    <a class="btn btn-lim" href="#kontakt">Zapytaj o ofertę</a>
+    <a class="btn btn-jasny" href="tel:+48535353054">53 53 53 054</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="dla-kogo">
+ <div class="sz">
+  <div class="naglowek">
+   <h2>Kran z frizzante w lokalu<br>albo barek na jeden wieczór</h2>
+   <p>Pracujemy z gastronomią na stałe i obsługujemy pojedyncze wydarzenia. W obu przypadkach dostajesz wino i sprzęt od jednej firmy.</p>
+  </div>
+  <div class="dwa">
+   <article class="blok">
+    <img src="img/kieliszki-608.webp" width="608" height="1000" alt="Kieliszki z frizzante, winem białym i czerwonym" loading="lazy" style="object-position:50% 62%">
+    <div>
+     <h3>Restauracje, puby, sklepy winiarskie</h3>
+     <p>Jeden kran z frizzante obok piwa to prosty sposób na nową pozycję w karcie. Wino z KEGa nie utlenia się, więc nalewasz tyle, ile zamówi gość.</p>
+     <ul class="kropki">
+      <li>przy dłuższej współpracy instalację przekazujemy w użytkowanie</li>
+      <li>bezpłatny serwis instalacji (bez butli gazu)</li>
+      <li>Warszawa i województwo mazowieckie</li>
+     </ul>
+     <a class="btn btn-graf" href="#kontakt" data-cel="Lokal - stała współpraca">Zapytaj o współpracę</a>
+    </div>
+   </article>
+   <article class="blok">
+    <img src="img/barek-1200.webp" srcset="img/barek-600.webp 600w, img/barek-1200.webp 1200w" sizes="(max-width:767px) 90vw, 560px" width="1200" height="630" alt="Mobilny barek NumberWine z kranem do frizzante" loading="lazy">
+    <div>
+     <h3>Wesela, imprezy firmowe i rodzinne</h3>
+     <p>Przywozimy KEG i nalewak, a goście nalewają sami. Prosecco z kija to dobre wino i atrakcja przy stole, a po imprezie nie zostaje stos pustych butelek.</p>
+     <a class="btn btn-graf" href="#kontakt" data-cel="Wesele">Zapytaj o termin</a>
+    </div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section id="oferta" class="szara">
+ <div class="sz">
+  <div class="naglowek">
+   <h2>Wina i drinki w KEGach</h2>
+   <p>KEGi 24 litry, wina z Włoch. Mamy też frizzante i spritz bez alkoholu. Przesuń, żeby zobaczyć wszystkie.</p>
+  </div>
+  <div class="pasek" id="pasek">
+   <article class="keg"><img src="img/glera-320.webp" srcset="img/glera-320.webp 320w, img/glera-640.webp 640w" sizes="180px" width="320" height="320" alt="Frizzante Glera" loading="lazy"><h3>Frizzante Glera</h3><p class="typ">frizzante, 24 l, Włochy</p><button type="button" data-cel="Frizzante Glera">Zapytaj o ten KEG</button></article>
+   <article class="keg"><img src="img/frizz-bez-320.webp" srcset="img/frizz-bez-320.webp 320w, img/frizz-bez-640.webp 640w" sizes="180px" width="320" height="320" alt="Frizzante bezalkoholowe" loading="lazy"><h3>Frizzante bezalkoholowe</h3><p class="typ">frizzante, 24 l, Włochy</p><button type="button" data-cel="Frizzante bezalkoholowe">Zapytaj o ten KEG</button></article>
+   <article class="keg"><img src="img/spritz-320.webp" srcset="img/spritz-320.webp 320w, img/spritz-640.webp 640w" sizes="180px" width="320" height="320" alt="Spritz" loading="lazy"><h3>Spritz</h3><p class="typ">drink, 24 l, Włochy</p><button type="button" data-cel="Spritz">Zapytaj o ten KEG</button></article>
+   <article class="keg"><img src="img/hugo-320.webp" srcset="img/hugo-320.webp 320w, img/hugo-640.webp 640w" sizes="180px" width="320" height="320" alt="Hugo" loading="lazy"><h3>Hugo</h3><p class="typ">drink, 24 l, Włochy</p><button type="button" data-cel="Hugo">Zapytaj o ten KEG</button></article>
+   <article class="keg"><img src="img/spritz-lemon-320.webp" srcset="img/spritz-lemon-320.webp 320w, img/spritz-lemon-640.webp 640w" sizes="180px" width="320" height="320" alt="Spritz lemon" loading="lazy"><h3>Spritz lemon</h3><p class="typ">drink, 24 l, Włochy</p><button type="button" data-cel="Spritz lemon">Zapytaj o ten KEG</button></article>
+   <article class="keg"><img src="img/spritz-bez-320.webp" srcset="img/spritz-bez-320.webp 320w, img/spritz-bez-640.webp 640w" sizes="180px" width="320" height="320" alt="Spritz bezalkoholowy" loading="lazy"><h3>Spritz bezalkoholowy</h3><p class="typ">drink, 24 l, Włochy</p><button type="button" data-cel="Spritz bezalkoholowy">Zapytaj o ten KEG</button></article>
+   <article class="keg"><img src="img/negroni-320.webp" srcset="img/negroni-320.webp 320w, img/negroni-640.webp 640w" sizes="180px" width="320" height="320" alt="Negroni" loading="lazy"><h3>Negroni</h3><p class="typ">drink, 24 l, Włochy</p><button type="button" data-cel="Negroni">Zapytaj o ten KEG</button></article>
+  </div>
+  <div class="pelna">
+   <div><h3>Frizzante</h3><ul class="kropki"><li>Frizzante Glera</li><li>Frizzante Glera VS</li><li>Frizzante PIU FIZZ</li><li>Frizzante różowe</li><li>Frizzante bezalkoholowe</li></ul></div>
+   <div><h3>Aperitivo</h3><ul class="kropki"><li>Spritz</li><li>Spritz Limonello</li><li>Hugo</li><li>Negroni</li></ul></div>
+   <div><h3>Wina spokojne</h3><ul class="kropki"><li>Pinot Grigio</li><li>Merlot</li><li>wino białe</li><li>wino czerwone</li></ul></div>
+  </div>
+  <p class="uwaga">Wina w KEGach podłącza się do instalacji z kranem. Jeśli jej nie masz, wynajmiemy albo sprzedamy sprzęt.</p>
+ </div>
+</section>
+
+<section id="dlaczego" class="ciemna">
+ <div class="sz dlaczego">
+  <div class="wstep">
+   <span class="kisc" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+   <h2 style="margin:22px 0 22px">Dlaczego z kija, a nie z butelki</h2>
+   <p>Frizzante z KEGa jest takie samo jak w chwili nalania w winiarni. Do kieliszka trafia schłodzone, z bąbelkami, bez względu na to, czy to pierwszy, czy ostatni kieliszek wieczoru.</p>
+   <p class="cytat">Prosecco lane z KEGa nazywa się frizzante. Nazwa Prosecco jest zastrzeżona dla butelek, stąd „prosecco z kija”.</p>
+  </div>
+  <ul class="zalety">
+   <li><h3>Zawsze świeże</h3><p>Po podłączeniu KEGa wino zachowuje smak i musowanie nawet przez miesiąc. Nie utlenia się jak otwarta butelka.</p></li>
+   <li><h3>Bez strat</h3><p>Nalewasz dokładnie tyle, ile trzeba. Nie zostają otwarte butelki, które trzeba wylać następnego dnia.</p></li>
+   <li><h3>Szybko przy barze</h3><p>Kieliszek nalewa się jak piwo. Łatwo też poczęstować gościa małą próbką.</p></li>
+   <li><h3>Mniej miejsca w magazynie</h3><p>Jeden KEG zastępuje kilkadziesiąt butelek, a pusty można po prostu wyrzucić.</p></li>
+   <li><h3>Mniej odpadów</h3><p>KEG z PET nadaje się do recyklingu. Odpadają korki, butelki, kartony i etykiety.</p></li>
+   <li><h3>Właściwa temperatura</h3><p>Schładzarka w instalacji pilnuje, żeby każdy kieliszek był podany tak, jak trzeba.</p></li>
+  </ul>
+ </div>
+</section>
+
+<section id="sprzet">
+ <div class="sz">
+  <div class="naglowek">
+   <h2>Sprzęt do nalewania wina</h2>
+   <p>Wynajem, sprzedaż i serwis. Stawiamy instalacje w klasycznych zabudowach i w nietypowych aranżacjach.</p>
+  </div>
+  <div class="trzy">
+   <article class="sprzet"><img src="img/ik-wynajem-245.webp" width="245" height="341" alt="" loading="lazy"><h3>Wynajem</h3><p>Dla lokali na stałe i na pojedyncze imprezy. Przy dłuższej umowie instalacja w użytkowanie z bezpłatnym serwisem.</p><a class="btn btn-graf" href="#kontakt" data-cel="Wynajem sprzętu">Zapytaj o wynajem</a></article>
+   <article class="sprzet"><img src="img/ik-sprzedaz-245.webp" width="245" height="341" alt="" loading="lazy"><h3>Sprzedaż</h3><p>Całe komplety albo pojedyncze elementy, jeśli wolisz mieć sprzęt na własność lub uzupełnić instalację.</p><a class="btn btn-graf" href="#kontakt" data-cel="Zakup sprzętu">Zapytaj o sprzęt</a></article>
+   <article class="sprzet"><img src="img/ik-serwis-245.webp" width="245" height="341" alt="" loading="lazy"><h3>Serwis</h3><p>Nasz zespół serwisuje instalacje do frizzante i instalacje piwne. W wielu warszawskich lokalach robimy to od lat.</p><a class="btn btn-graf" href="#kontakt" data-cel="Serwis">Zgłoś serwis</a></article>
+  </div>
+  <div class="komplet">
+   <div>
+    <h3 style="margin-bottom:14px">Co jest w komplecie</h3>
+    <ul class="kropki">
+     <li>kolumna jedno-, dwu- lub trzykranowa</li>
+     <li>schładzarka do frizzante</li>
+     <li>reduktor gazowy</li>
+     <li>przewody i głowice</li>
+    </ul>
+   </div>
+   <p style="margin:0">Dobierzemy zestaw do lokalu albo do imprezy: ile kranów, jakie wina i gdzie stanie barek. Napisz, co planujesz, a odpowiemy z konkretną propozycją.</p>
+  </div>
+ </div>
+</section>
+
+<section id="o-nas" class="szara">
+ <div class="sz">
+  <div class="naglowek">
+   <h2>Z gastronomią od 2006 roku</h2>
+   <p>Zaczynaliśmy od systemów dla lokali, potem krany i instalacje piwne. Gdy klienci zaczęli poświęcać jeden kran na frizzante, zajęliśmy się winem z KEGa na dobre.</p>
+  </div>
+  <ol class="os">
+   <li><b>2006</b><span>Powstaje NumberWine</span></li>
+   <li><b>2010</b><span>Krany i instalacje do nalewania</span></li>
+   <li><b>2014</b><span>Wypożyczalnia sprzętu</span></li>
+   <li><b>2020</b><span>Frizzante z KEGów</span></li>
+  </ol>
+  <h2 style="font-size:clamp(26px,2.6vw,36px);margin-bottom:28px">Co mówią klienci</h2>
+  <div class="opinie">
+   <blockquote class="opinia"><p>Współpracujemy z NumberWine od kilku lat. Podoba nam się podejście do klienta, a także terminowość i elastyczność firmy. Możemy liczyć na szybką reakcję przy serwisie, a przy większej awarii na wynajem sprzętu.</p><footer><b>Anita G.</b>manager restauracji</footer></blockquote>
+   <blockquote class="opinia"><p>Skorzystaliśmy z usług NumberWine podczas przyjęcia rocznicowego rodziców w domu i ogrodzie. Firma dostarczyła nam nie tylko wino i nalewak, ale także nalewak do piwa. Goście mieli fajną zabawę, nalewając samodzielnie.</p><footer><b>Michał J.</b>osoba prywatna</footer></blockquote>
+   <blockquote class="opinia"><p>Organizujemy imprezy modowe, a NumberWine dostarcza nam prosecco i sprzęt do jego rozlewania. Nie ma mody bez prosecco. Polecamy współpracę z tą firmą!</p><footer><b>Daria S.</b>firma eventowa</footer></blockquote>
+  </div>
+ </div>
+</section>
+
+<section id="kontakt">
+ <div class="sz kontakt">
+  <div class="dane">
+   <h2 style="margin-bottom:20px">Kontakt</h2>
+   <p>Napisz albo zadzwoń: odpowiemy z ofertą dla lokalu albo z wyceną na konkretny termin.</p>
+   <a class="duzy" href="tel:+48535353054">53 53 53 054</a>
+   <a href="mailto:biuro@numberwine.pl">biuro@numberwine.pl</a>
+   <dl>
+    <dt>Firma</dt><dd>Number Wine Jerzy Wolert</dd>
+    <dt>Adres</dt><dd>ul. Bodycha 31, 05-816 Opacz-Kolonia</dd>
+    <dt>Obszar</dt><dd>Warszawa i województwo mazowieckie</dd>
+   </dl>
+   <div class="mapa" id="mapa" data-src="https://www.google.com/maps?q=ul.+Bodycha+31,+05-816+Opacz-Kolonia&amp;output=embed"></div>
+  </div>
+  <form id="formularz" novalidate>
+   <h3>Zapytanie</h3>
+   <div class="pola">
+    <label>Imię<input name="imie" autocomplete="given-name"></label>
+    <label>Telefon lub e-mail<input name="kontakt" autocomplete="email"></label>
+    <label>Czego dotyczy<select name="cel" id="cel">
+     <option>Lokal - stała współpraca</option><option>Wesele</option><option>Impreza firmowa</option><option>Impreza rodzinna</option><option>Wynajem sprzętu</option><option>Zakup sprzętu</option><option>Serwis</option>
+     <option>Frizzante Glera</option><option>Frizzante bezalkoholowe</option><option>Spritz</option><option>Hugo</option><option>Spritz lemon</option><option>Spritz bezalkoholowy</option><option>Negroni</option>
+    </select></label>
+    <label>Termin (jeśli impreza)<input name="termin" type="date"></label>
+    <label class="cale">Wiadomość<textarea name="wiadomosc" placeholder="Np. liczba gości, miejsce, ile kranów w lokalu"></textarea></label>
+    <label class="zgoda cale"><input type="checkbox"> Wyrażam zgodę na kontakt w sprawie zapytania. Mam ukończone 18 lat.</label>
+   </div>
+   <button class="btn btn-lim" type="submit">Wyślij zapytanie</button>
+   <p class="info" id="info">To podgląd strony: formularz zacznie wysyłać wiadomości na docelowej stronie.</p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer class="stopka">
+ <div class="sz">
+  <div class="siatka">
+   <div>
+    <img src="img/logo-jasne-405.webp" width="405" height="275" alt="NumberWine" style="width:110px;margin-bottom:16px" loading="lazy">
+    <p style="margin:0">Dystrybutor wina w KEGach i sprzętu do jego nalewania.</p>
+    <p class="wiek">Sprzedaż alkoholu wyłącznie osobom pełnoletnim.</p>
+   </div>
+   <div><h3>Oferta</h3><ul><li><a href="#oferta">Wina w KEGach</a></li><li><a href="#sprzet">Sprzęt i wynajem</a></li><li><a href="#dlaczego">Wino z kranu</a></li><li><a href="#o-nas">O nas</a></li></ul></div>
+   <div><h3>Kontakt</h3><ul><li><a href="tel:+48535353054">53 53 53 054</a></li><li><a href="mailto:biuro@numberwine.pl">biuro@numberwine.pl</a></li><li>ul. Bodycha 31</li><li>05-816 Opacz-Kolonia</li></ul></div>
+   <div><h3>Obserwuj</h3><ul><li><a href="https://www.facebook.com/numberwinepl" rel="noopener">Facebook</a></li><li><a href="https://www.instagram.com/numberwinepl/" rel="noopener">Instagram</a></li></ul></div>
+  </div>
+  <div class="dol">
+   <span>© 2026 NumberWine. Polityka prywatności</span>
+   <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=numberwine.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+ </div>
+</footer>
+
+<script>
+(function(){
+ var top=document.getElementById('top'),menu=document.getElementById('menu'),burger=document.getElementById('burger');
+ function pas(){top.classList.toggle('pas',window.scrollY>40||menu.classList.contains('otwarte'))}
+ pas();window.addEventListener('scroll',pas,{passive:true});
+ burger.addEventListener('click',function(){var o=menu.classList.toggle('otwarte');burger.setAttribute('aria-expanded',o);pas()});
+ menu.addEventListener('click',function(e){if(e.target.closest('a')){menu.classList.remove('otwarte');burger.setAttribute('aria-expanded','false');pas()}});
+ var cel=document.getElementById('cel');
+ document.querySelectorAll('[data-cel]').forEach(function(el){el.addEventListener('click',function(e){cel.value=el.getAttribute('data-cel');if(el.tagName==='BUTTON'){document.getElementById('kontakt').scrollIntoView({behavior:'smooth'})}})});
+ document.getElementById('formularz').addEventListener('submit',function(e){e.preventDefault();document.getElementById('info').style.display='block'});
+ // przesuwanie paska myszą
+ var p=document.getElementById('pasek'),x0=0,s0=0,ciag=false,ruch=0;
+ p.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;ciag=true;ruch=0;x0=e.clientX;s0=p.scrollLeft;p.classList.add('ciag')});
+ window.addEventListener('pointermove',function(e){if(!ciag)return;ruch=Math.abs(e.clientX-x0);p.scrollLeft=s0-(e.clientX-x0)});
+ window.addEventListener('pointerup',function(){if(!ciag)return;ciag=false;p.classList.remove('ciag')});
+ p.addEventListener('click',function(e){if(ruch>6){e.preventDefault();e.stopPropagation();ruch=0}},true);
+ // mapa dopiero przy przewinięciu
+ var m=document.getElementById('mapa');
+ if('IntersectionObserver' in window){new IntersectionObserver(function(w,o){if(w[0].isIntersecting){m.innerHTML='<iframe title="Mapa dojazdu" loading="lazy" src="'+m.getAttribute('data-src')+'"></iframe>';o.disconnect()}},{rootMargin:'300px'}).observe(m)}
+})();
+</script>
+</body>
+</html>
